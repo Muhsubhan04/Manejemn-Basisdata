@@ -1,0 +1,41 @@
+use motor
+
+db.motor_wide_column.insertMany([
+  {
+    merk: "Honda",
+    tipe: "CBR150R",
+    tahun: 2020,
+    warna: "Merah",
+    spesifikasi: { mesin: "150cc", tenaga: "17 HP", transmisi: "Manual" }
+  },
+  {
+    merk: "Yamaha",
+    tipe: "R15",
+    tahun: 2021,
+    warna: "Biru",
+    fitur: ["ABS", "LED Headlight"]
+  },
+  {
+    merk: "Suzuki",
+    tipe: "GSX-R150",
+    tahun: 2019,
+    warna: "Hitam",
+    spesifikasi: { mesin: "147cc", tenaga: "19 HP" },
+    aksesori: ["Windshield", "Cover Jok"]
+  },
+  {
+    merk: "Kawasaki",
+    tipe: "Ninja 250",
+    tahun: 2022,
+    warna: "Hijau",
+    fitur: ["Traction Control", "LCD Display"]
+  },
+  {
+    merk: "TVS",
+    tipe: "Apache RTR 160",
+    tahun: 2020,
+    warna: "Putih",
+    spesifikasi: { mesin: "160cc", tenaga: "15 HP" },
+    aksesori: ["Crash Guard"]
+  }
+])

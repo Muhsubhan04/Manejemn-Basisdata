@@ -1,0 +1,10 @@
+use motor
+
+db.motor_key_value_store.insertMany([
+  { _id: "motor1", value: { merk: "Honda", tipe: "CBR150R", tahun: 2020, warna: "Merah" } },
+  { _id: "motor2", value: { merk: "Yamaha", tipe: "R15", tahun: 2021, warna: "Biru" } },
+  { _id: "motor3", value: { merk: "Suzuki", tipe: "GSX-R150", tahun: 2019, warna: "Hitam" } },
+  { _id: "motor4", value: { merk: "Kawasaki", tipe: "Ninja 250", tahun: 2022, warna: "Hijau" } },
+  { _id: "motor5", value: { merk: "TVS", tipe: "Apache RTR 160", tahun: 2020, warna: "Putih" } }
+])
+  db.motor_key_value_store.findOne({ _id: "motor1" })
